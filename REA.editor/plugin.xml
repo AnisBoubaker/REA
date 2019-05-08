@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated REA -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="rea.presentation.reaModelWizardID"
+            name="%_UI_reaModelWizard_label"
+            class="rea.presentation.reaModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/reaModelFile.gif">
+         <description>%_UI_reaModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated REA -->
+      <editor
+            id="rea.presentation.reaEditorID"
+            name="%_UI_reaEditor_label"
+            icon="icons/full/obj16/reaModelFile.gif"
+            extensions="rea"
+            class="rea.presentation.reaEditor"
+            contributorClass="rea.presentation.reaActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
